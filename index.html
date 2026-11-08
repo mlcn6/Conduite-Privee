@@ -20,8 +20,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;700;800&family=Jost:wght@200;300;400&family=Barlow+Condensed:wght@600;700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles-maquettes.css">
 
   <script type="application/ld+json">
   {
@@ -58,7 +59,8 @@
   <header class="site-header" data-header>
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Conduite Privée, accueil">
-        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
+        <img class="brand-logo brand-logo-dark" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
+        <img class="brand-logo brand-logo-light" src="assets/img/logo-conduite-privee.png" alt="" width="600" height="195">
       </a>
       <nav class="main-nav" id="menu" aria-label="Navigation principale">
         <a href="#services">Services</a>
@@ -523,7 +525,8 @@
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#top" aria-label="Conduite Privée, retour en haut">
-        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
+        <img class="brand-logo brand-logo-dark" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
+        <img class="brand-logo brand-logo-light" src="assets/img/logo-conduite-privee.png" alt="" width="600" height="195">
         </a>
         <p class="signature">« Vous conduire, c'est notre métier »</p>
         <p>Transport de personnes avec chauffeur en Gironde et en Nouvelle-Aquitaine depuis 2014.</p>
@@ -566,6 +569,16 @@
   <div class="mobile-bar" aria-label="Actions rapides">
     <a class="btn btn-ghost btn-sm" href="tel:+33777496234">Appeler</a>
     <a class="btn btn-primary btn-sm" href="#reserver">Réserver</a>
+  </div>
+
+  <!-- Sélecteur des 5 directions visuelles (outil de maquette, à retirer une fois le style choisi) -->
+  <div class="style-switch" role="group" aria-label="Choisir un style de maquette">
+    <span class="style-switch-label">Maquette · style</span>
+    <button type="button" data-set-style="" aria-pressed="true">1<span class="sw-name"> Nuit turquoise</span></button>
+    <button type="button" data-set-style="editorial" aria-pressed="false">2<span class="sw-name"> Éditorial blanc</span></button>
+    <button type="button" data-set-style="corporate" aria-pressed="false">3<span class="sw-name"> Bleu nuit</span></button>
+    <button type="button" data-set-style="minimal" aria-pressed="false">4<span class="sw-name"> Noir minimal</span></button>
+    <button type="button" data-set-style="signature" aria-pressed="false">5<span class="sw-name"> Signature</span></button>
   </div>
 
   <script src="assets/js/main.js" defer></script>

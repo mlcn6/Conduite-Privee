@@ -192,6 +192,23 @@
     if (c.getContext) Trails(c);
   });
 
+  /* ---------- Sélecteur de style (maquette) ---------- */
+  var styleButtons = document.querySelectorAll('[data-set-style]');
+  function applyStyle(name) {
+    if (name) doc.setAttribute('data-style', name); else doc.removeAttribute('data-style');
+    Array.prototype.forEach.call(styleButtons, function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set-style') === name));
+    });
+    try { localStorage.setItem('cp-style', name); } catch (e) {}
+  }
+  Array.prototype.forEach.call(styleButtons, function (b) {
+    b.addEventListener('click', function () { applyStyle(b.getAttribute('data-set-style')); });
+  });
+  var saved = null;
+  try { saved = localStorage.getItem('cp-style'); } catch (e) {}
+  var fromQuery = (location.search.match(/[?&]style=([a-z]+)/) || [])[1];
+  if (fromQuery || saved) applyStyle(fromQuery || saved);
+
   /* ---------- Année ---------- */
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
