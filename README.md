@@ -2,12 +2,13 @@
 
 Site vitrine de **CONDUITE PRIVÉE** (SARL, Lormont · Bordeaux), transport privé de voyageurs : transferts aéroport et gare, navettes d'entreprise, trajets privés sur réservation.
 
-## Contenu actuel : maquette v4 de la page d'accueil
+## Contenu actuel : maquette v5 de la page d'accueil
 
 ```
 index.html            page d'accueil (HTML sémantique, SEO, JSON-LD LocalBusiness)
-assets/css/style.css  identité visuelle (thème sombre, touches de bleu clair et de blanc)
+assets/css/style.css  identité visuelle (thème sombre, accent turquoise du logo officiel)
 assets/js/main.js     menu, en-tête au défilement, demande rapide, animations
+assets/img/           logos officiels (original, variante fond sombre, monogramme, favicon)
 ```
 
 Site statique sans dépendance : ouvrir `index.html` dans un navigateur suffit.
@@ -18,15 +19,17 @@ En-tête fixe avec CTA · hero avec demande rapide · repères de confiance · l
 ### Informations à compléter
 Tous les éléments manquants sont marqués `<span class="ph">[…]</span>` (soulignés en pointillés) ou par des blocs « Photo à intégrer » :
 
-- téléphone, e-mail, horaires
-- capacités (passagers, bagages) et équipements de chaque véhicule
+- e-mail commercial, horaires
+- année du Sprinter, capacité bagages (aucun équipement non confirmé n'est affiché)
+- note Google 5/5 (6 avis) à revérifier avant publication
+- domaine www.conduiteprivee.com à vérifier avant configuration DNS
 - délai de réservation conseillé (FAQ)
 - numéro d'inscription au registre VTC (FAQ, pied de page)
 - photos : hero plein cadre, chauffeur, Classe V, Sprinter, image de partage (og:image)
 - avis clients vérifiés et logos partenaires (aucun avis inventé)
 - URL définitive (`<link rel="canonical">`)
 
-Aucun tarif, avis, certification ni coordonnée n'a été inventé.
+Aucun tarif, avis, certification ni coordonnée n'a été inventé. La variante « fond sombre » du logo passe seulement le mot CONDUITE du noir au blanc : à faire valider.
 
 ### Brancher un système de réservation
 Dans `assets/js/main.js`, l'objet `BOOKING` centralise l'envoi :
