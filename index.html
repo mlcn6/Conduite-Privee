@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chauffeur privé Bordeaux, navettes et transferts aéroport | Conduite Privée</title>
+  <meta name="description" content="Conduite Privée, transport privé de voyageurs à Bordeaux depuis 2013 : transferts aéroport Bordeaux-Mérignac et gare Saint-Jean, navettes d'entreprise, trajets privés sur réservation en Mercedes Classe V et Sprinter.">
+  <!-- À compléter : URL définitive du site -->
+  <link rel="canonical" href="https://www.example.com/">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Conduite Privée">
+  <meta property="og:title" content="Conduite Privée | Chauffeur privé et navettes à Bordeaux">
+  <meta property="og:description" content="Transferts aéroport et gare, navettes d'entreprise et trajets privés sur réservation, à Bordeaux et en Gironde depuis 2013.">
+  <!-- À compléter : <meta property="og:image" content="…/og-image.jpg"> (photo Classe V, 1200×630) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "additionalType": "https://schema.org/TaxiService",
+    "name": "Conduite Privée",
+    "legalName": "CONDUITE PRIVEE",
+    "description": "Transport privé de voyageurs à Bordeaux et en Gironde : transferts aéroport et gare, navettes d'entreprise, trajets privés sur réservation.",
+    "foundingDate": "2013-12-06",
+    "vatID": "FR87798962932",
+    "identifier": { "@type": "PropertyValue", "propertyID": "SIREN", "value": "798962932" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 impasse du Potier",
+      "postalCode": "33310",
+      "addressLocality": "Lormont",
+      "addressRegion": "Nouvelle-Aquitaine",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 44.879, "longitude": -0.521 },
+    "areaServed": ["Bordeaux", "Lormont", "Mérignac", "Bordeaux Métropole", "Gironde"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Conduite Privée, accueil">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span class="brand-name">Conduite <span>Privée</span></span>
+      </a>
+      <nav class="main-nav" id="menu" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#flotte">Flotte</a>
+        <a href="#maison">À propos</a>
+        <a href="#zone">Zone desservie</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-phone" href="#contact"><span class="ph" title="À compléter">[Téléphone]</span></a>
+      </nav>
+      <a class="btn btn-gold btn-sm header-cta" href="#reserver">Réserver un trajet</a>
+      <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero-trails" aria-hidden="true" data-trails></canvas>
+      <div class="hero-photo" aria-hidden="true">
+        <span class="slot-note">Emplacement photo plein cadre&nbsp;: Mercedes Classe V noire, de nuit, quais de Bordeaux</span>
+      </div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Chauffeur privé · Bordeaux · Gironde</p>
+          <h1 id="hero-title">
+            <span class="h1-kicker">Transport privé et navettes à Bordeaux</span>
+            <span class="h1-display">Partez serein,<br>arrivez <em>à l'heure.</em></span>
+          </h1>
+          <p class="lead">Depuis 2013, Conduite Privée assure vos transferts aéroport et gare, vos navettes d'entreprise et vos trajets privés sur réservation, à bord de Mercedes Classe V et Sprinter.</p>
+          <div class="cta-row">
+            <a class="btn btn-gold" href="#reserver">Réserver un trajet</a>
+            <a class="btn btn-ghost" href="#reserver">Demander un devis</a>
+          </div>
+        </div>
+
+        <!-- Demande rapide : point d'entrée vers la future page Réservation -->
+        <form class="quick" id="reserver" data-quick novalidate aria-labelledby="quick-title">
+          <div class="quick-head">
+            <h2 id="quick-title">Demande rapide</h2>
+            <p>Devis personnalisé, sans engagement</p>
+          </div>
+          <div class="field">
+            <label for="q-from">Départ</label>
+            <input id="q-from" name="depart" type="text" autocomplete="street-address" placeholder="Adresse, gare, aéroport…" required>
+          </div>
+          <div class="field">
+            <label for="q-to">Destination</label>
+            <input id="q-to" name="destination" type="text" placeholder="Ex. Aéroport Bordeaux-Mérignac" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="q-date">Date</label>
+              <input id="q-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="q-time">Heure</label>
+              <input id="q-time" name="heure" type="time" required>
+            </div>
+            <div class="field field-pax">
+              <label for="q-pax">Passagers</label>
+              <select id="q-pax" name="passagers">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+                <option value="9+">9 et plus</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit">Continuer ma demande</button>
+          <p class="quick-msg" role="status" aria-live="polite" data-quick-msg></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ REPÈRES DE CONFIANCE ============ -->
+    <section class="proof" aria-label="Repères">
+      <div class="wrap proof-grid">
+        <div class="proof-item"><strong>2013</strong><span>Entreprise fondée à Lormont</span></div>
+        <div class="proof-item"><strong>BOD · Saint-Jean</strong><span>Transferts aéroport et gare</span></div>
+        <div class="proof-item"><strong>Classe V · Sprinter</strong><span>Flotte Mercedes-Benz</span></div>
+        <div class="proof-item"><strong>Sur réservation</strong><span>Devis personnalisé</span></div>
+      </div>
+    </section>
+
+    <!-- ============ LA MAISON ============ -->
+    <section class="maison light" id="maison" aria-labelledby="maison-title">
+      <div class="wrap maison-grid">
+        <div class="maison-photo photo-slot" role="img" aria-label="Emplacement photo&nbsp;: chauffeur ouvrant la portière d'une Mercedes Classe V">
+          <span class="slot-label">Photo à intégrer</span>
+          <span class="slot-desc">Chauffeur en tenue, portière ouverte, Classe V noire</span>
+        </div>
+        <div class="maison-copy">
+          <p class="eyebrow">La maison</p>
+          <h2 id="maison-title">Un chauffeur, un véhicule préparé, un horaire tenu. <em>Le reste vous appartient.</em></h2>
+          <p>Installée à Lormont, aux portes de Bordeaux, Conduite Privée transporte depuis plus de douze ans des voyageurs d'affaires, des équipes et des particuliers. Notre métier tient en peu de mots&nbsp;: être là à l'heure, conduire avec soin et laisser chaque passager profiter de son trajet.</p>
+          <ul class="values">
+            <li><strong>Ponctualité</strong><span>Horaires anticipés, itinéraires préparés.</span></li>
+            <li><strong>Sécurité</strong><span>Conduite souple et véhicules entretenus.</span></li>
+            <li><strong>Discrétion</strong><span>Vos échanges et vos déplacements restent les vôtres.</span></li>
+            <li><strong>Satisfaction</strong><span>Chaque demande traitée personnellement.</span></li>
+          </ul>
+          <a class="link-arrow" href="#maison">Découvrir notre histoire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Nos services</p>
+          <h2 id="services-title">Un trajet pour chaque <em>occasion</em></h2>
+          <p>Transferts, navettes et déplacements sur réservation à Bordeaux, dans la métropole et partout en Gironde.</p>
+        </div>
+        <ul class="service-list">
+          <li class="service">
+            <span class="service-code">BOD</span>
+            <div class="service-body">
+              <h3>Transferts aéroport</h3>
+              <p class="service-sub">Bordeaux-Mérignac</p>
+              <p>Prise en charge à votre adresse et dépose au terminal, ou accueil à votre arrivée pour rejoindre votre hôtel, votre bureau ou votre domicile.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Réserver un transfert aéroport">Réserver</a>
+          </li>
+          <li class="service">
+            <span class="service-code">SNCF</span>
+            <div class="service-body">
+              <h3>Transferts gare</h3>
+              <p class="service-sub">Bordeaux Saint-Jean</p>
+              <p>Vos départs et arrivées en train, sans chercher de taxi ni de stationnement, avec vos bagages pris en charge.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Réserver un transfert gare">Réserver</a>
+          </li>
+          <li class="service">
+            <span class="service-code">PRO</span>
+            <div class="service-body">
+              <h3>Navettes d'entreprise</h3>
+              <p class="service-sub">Équipes, séminaires, visiteurs</p>
+              <p>Navettes ponctuelles ou régulières pour vos collaborateurs, vos clients et vos événements, en Classe V ou en Sprinter selon le nombre de passagers.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Demander un devis navette">Devis</a>
+          </li>
+          <li class="service">
+            <span class="service-code">RDV</span>
+            <div class="service-body">
+              <h3>Déplacements professionnels</h3>
+              <p class="service-sub">Rendez-vous, visites, roadshows</p>
+              <p>Un chauffeur pour enchaîner vos rendez-vous en Gironde et au-delà, en travaillant pendant le trajet et sans contrainte de stationnement.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Demander un devis déplacement professionnel">Devis</a>
+          </li>
+          <li class="service">
+            <span class="service-code">PRIV</span>
+            <div class="service-body">
+              <h3>Transports privés</h3>
+              <p class="service-sub">Sorties, événements familiaux, voyages</p>
+              <p>Pour une soirée, un événement ou un départ en vacances, un trajet confortable de porte à porte, réservé à l'avance.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Réserver un transport privé">Réserver</a>
+          </li>
+          <li class="service">
+            <span class="service-code">+</span>
+            <div class="service-body">
+              <h3>Prestations sur mesure</h3>
+              <p class="service-sub">Votre demande, notre organisation</p>
+              <p>Un trajet qui ne rentre dans aucune case&nbsp;? Décrivez-le&nbsp;: nous étudions chaque demande et vous proposons une solution adaptée.</p>
+            </div>
+            <a class="service-link" href="#reserver" aria-label="Décrire une demande sur mesure">Devis</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FLOTTE ============ -->
+    <section class="fleet light" id="flotte" aria-labelledby="fleet-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Notre flotte</p>
+          <h2 id="fleet-title">Mercedes-Benz, <em>de la berline-van au minibus</em></h2>
+          <p>Des véhicules spacieux et soignés, choisis pour le confort des passagers et la place réservée aux bagages.</p>
+        </div>
+        <div class="fleet-grid">
+          <article class="vehicle">
+            <div class="photo-slot vehicle-photo" role="img" aria-label="Emplacement photo&nbsp;: Mercedes-Benz Classe V">
+              <span class="slot-label">Photo à intégrer</span>
+              <span class="slot-desc">Classe V, vue trois-quarts avant, fond neutre</span>
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-kicker">Transferts · Affaires · VIP</p>
+              <h3>Mercedes-Benz Classe V</h3>
+              <p>L'espace d'un salon et le silence d'une berline, pour vos transferts et vos déplacements d'affaires.</p>
+              <dl class="specs">
+                <div><dt>Passagers</dt><dd><span class="ph" title="À compléter">[à compléter]</span></dd></div>
+                <div><dt>Bagages</dt><dd><span class="ph" title="À compléter">[à compléter]</span></dd></div>
+                <div><dt>À bord</dt><dd><span class="ph" title="À compléter">[équipements]</span></dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="vehicle">
+            <div class="photo-slot vehicle-photo" role="img" aria-label="Emplacement photo&nbsp;: Mercedes-Benz Sprinter">
+              <span class="slot-label">Photo à intégrer</span>
+              <span class="slot-desc">Sprinter, vue latérale, porte coulissante ouverte</span>
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-kicker">Groupes · Navettes · Séminaires</p>
+              <h3>Mercedes-Benz Sprinter</h3>
+              <p>La solution pour déplacer un groupe ensemble, avec ses bagages, dans un même confort.</p>
+              <dl class="specs">
+                <div><dt>Passagers</dt><dd><span class="ph" title="À compléter">[à compléter]</span></dd></div>
+                <div><dt>Bagages</dt><dd><span class="ph" title="À compléter">[à compléter]</span></dd></div>
+                <div><dt>À bord</dt><dd><span class="ph" title="À compléter">[équipements]</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <a class="link-arrow" href="#flotte">Voir toute la flotte</a>
+      </div>
+    </section>
+
+    <!-- ============ ÉTAPES ============ -->
+    <section class="steps" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Réservation</p>
+          <h2 id="steps-title">Votre trajet en <em>quatre étapes</em></h2>
+        </div>
+        <ol class="step-list">
+          <li><span class="step-n">01</span><h3>Votre demande</h3><p>Départ, destination, date, horaire, passagers et bagages&nbsp;: quelques informations suffisent.</p></li>
+          <li><span class="step-n">02</span><h3>Votre devis</h3><p>Nous revenons vers vous avec une proposition claire et détaillée, adaptée à votre trajet.</p></li>
+          <li><span class="step-n">03</span><h3>La confirmation</h3><p>Vous validez, nous préparons l'itinéraire et vous confirmons la prise en charge.</p></li>
+          <li><span class="step-n">04</span><h3>Le jour J</h3><p>Votre chauffeur vous attend au lieu et à l'heure convenus. Vous n'avez plus qu'à monter.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ZONE DESSERVIE ============ -->
+    <section class="zone light" id="zone" aria-labelledby="zone-title">
+      <div class="wrap zone-grid">
+        <div class="zone-copy">
+          <p class="eyebrow">Zone desservie</p>
+          <h2 id="zone-title">Depuis Lormont, <em>toute la Gironde</em></h2>
+          <p>Notre base, sur la rive droite, nous place à quelques minutes du centre de Bordeaux et des grands axes de la métropole.</p>
+          <ul class="places">
+            <li><span>Lormont et rive droite</span><small>Base</small></li>
+            <li><span>Bordeaux et sa métropole</span><small>Quotidien</small></li>
+            <li><span>Aéroport Bordeaux-Mérignac</span><small>BOD</small></li>
+            <li><span>Gare Bordeaux Saint-Jean</span><small>Gare</small></li>
+            <li><span>Toute la Gironde</span><small>33</small></li>
+            <li><span>Longues distances</span><small>Sur demande</small></li>
+          </ul>
+        </div>
+        <figure class="zone-map">
+          <svg viewBox="0 0 400 270" role="img" aria-labelledby="map-title">
+            <title id="map-title">Schéma : Lormont, Bordeaux centre, gare Saint-Jean et aéroport de Mérignac</title>
+            <path class="map-river" d="M352 270 C324 232 314 204 300 178 C284 152 282 126 302 100 C320 78 320 40 306 0"/>
+            <text class="map-river-label" x="318" y="140">Garonne</text>
+            <path class="map-route" d="M341 55 C320 110 280 140 259 164"/>
+            <path class="map-route" d="M341 55 C330 120 310 170 291 192"/>
+            <path class="map-route" d="M341 55 C260 70 120 110 64 187"/>
+            <g class="map-pt map-pt-home"><circle cx="341" cy="55" r="7"/><circle class="pulse" cx="341" cy="55" r="7"/></g>
+            <g class="map-pt"><circle cx="259" cy="164" r="4.5"/></g>
+            <g class="map-pt"><circle cx="291" cy="192" r="4.5"/></g>
+            <g class="map-pt"><circle cx="64" cy="187" r="4.5"/></g>
+            <text class="map-label map-label-home" x="352" y="40" text-anchor="end">Lormont</text>
+            <text class="map-label" x="248" y="158" text-anchor="end">Bordeaux</text>
+            <text class="map-label" x="300" y="214">Saint-Jean</text>
+            <text class="map-label" x="64" y="210" text-anchor="middle">Mérignac · BOD</text>
+          </svg>
+          <figcaption>Schéma indicatif · 44,88° N, 0,52° O</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ AVIS (emplacement) ============ -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="wrap reviews-inner">
+        <div>
+          <p class="eyebrow">Ils nous font confiance</p>
+          <h2 id="reviews-title">La parole <em>à nos clients</em></h2>
+        </div>
+        <div class="placeholder-block">
+          <strong>Emplacement réservé</strong>
+          <p>Avis clients vérifiés (par exemple vos avis Google) et logos d'entreprises partenaires, à intégrer avec leur accord. Aucun avis n'est inventé sur cette maquette.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq light" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Avant de <em>réserver</em></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Comment obtenir un devis&nbsp;?</summary>
+            <p>Remplissez la demande rapide en haut de page ou le formulaire de réservation : départ, destination, date, horaire et nombre de passagers. Vous pouvez aussi nous appeler au <span class="ph" title="À compléter">[téléphone]</span>.</p>
+          </details>
+          <details>
+            <summary>Quelles zones desservez-vous&nbsp;?</summary>
+            <p>Nous sommes basés à Lormont et intervenons à Bordeaux, dans toute la métropole, à l'aéroport de Bordeaux-Mérignac, à la gare Saint-Jean et dans toute la Gironde. Les longues distances sont étudiées sur demande.</p>
+          </details>
+          <details>
+            <summary>Organisez-vous des navettes pour les entreprises&nbsp;?</summary>
+            <p>Oui, ponctuelles ou régulières, pour vos équipes, vos visiteurs ou vos événements. Selon le nombre de passagers, nous utilisons une Classe V ou un Sprinter.</p>
+          </details>
+          <details>
+            <summary>Combien de temps à l'avance faut-il réserver&nbsp;?</summary>
+            <p><span class="ph" title="À compléter">[Délai de réservation conseillé à préciser]</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPEL À L'ACTION ============ -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <canvas class="hero-trails" aria-hidden="true" data-trails data-trails-soft></canvas>
+      <div class="wrap cta-inner">
+        <h2 id="cta-title">Un trajet à organiser&nbsp;? <em>Parlons-en.</em></h2>
+        <p>Réponse personnalisée à chaque demande. Téléphone&nbsp;: <span class="ph" title="À compléter">[à compléter]</span></p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="#reserver">Réserver un trajet</a>
+          <a class="btn btn-ghost" href="#reserver">Demander un devis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Conduite Privée, retour en haut">
+          <span class="brand-mark" aria-hidden="true">CP</span>
+          <span class="brand-name">Conduite <span>Privée</span></span>
+        </a>
+        <p>Transport privé de voyageurs à Bordeaux et en Gironde depuis 2013.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Services</h2>
+        <ul>
+          <li><a href="#services">Transferts aéroport</a></li>
+          <li><a href="#services">Transferts gare</a></li>
+          <li><a href="#services">Navettes d'entreprise</a></li>
+          <li><a href="#services">Déplacements professionnels</a></li>
+          <li><a href="#services">Transports privés</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <address>
+          14 impasse du Potier<br>33310 Lormont<br>
+          Tél. <span class="ph" title="À compléter">[à compléter]</span><br>
+          <span class="ph" title="À compléter">[e-mail à compléter]</span>
+        </address>
+        <p class="hours">Horaires&nbsp;: <span class="ph" title="À compléter">[à compléter]</span></p>
+      </div>
+      <div>
+        <h2 class="footer-title">Informations</h2>
+        <ul>
+          <li><a href="#maison">À propos</a></li>
+          <li><a href="#zone">Zone desservie</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="#contact">Gestion des cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <p>© <span data-year>2026</span> CONDUITE PRIVÉE · SARL · SIREN 798 962 932 · SIRET 798 962 932 00025 · TVA FR87798962932 · NAF 4939B</p>
+    </div>
+  </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar" aria-label="Actions rapides">
+    <a class="btn btn-ghost btn-sm" href="#contact">Appeler</a>
+    <a class="btn btn-gold btn-sm" href="#reserver">Réserver</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
