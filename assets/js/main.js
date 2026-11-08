@@ -1,4 +1,4 @@
-/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v1) */
+/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v2) */
 (function () {
   'use strict';
 
@@ -162,9 +162,9 @@
             var a = c.t - (k / steps) * c.len * l.dir;
             var b = c.t - ((k + 1) / steps) * c.len * l.dir;
             var p1 = point(l, a), p2 = point(l, b);
-            var alpha = (1 - k / steps) * (soft ? 0.35 : 0.6);
+            var alpha = (1 - k / steps) * (soft ? 0.25 : 0.45);
             ctx.beginPath(); ctx.moveTo(p1[0], p1[1]); ctx.lineTo(p2[0], p2[1]);
-            ctx.strokeStyle = l.warm ? 'rgba(226,200,150,' + alpha + ')' : 'rgba(200,70,60,' + alpha * 0.8 + ')';
+            ctx.strokeStyle = l.warm ? 'rgba(225,235,250,' + alpha + ')' : 'rgba(110,150,215,' + alpha * 0.8 + ')';
             ctx.lineWidth = l.width * (1 - k / steps * 0.6);
             ctx.lineCap = 'round';
             ctx.stroke();
