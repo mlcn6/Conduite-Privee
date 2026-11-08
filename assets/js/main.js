@@ -96,7 +96,7 @@
   }
 
   /* ---------- Apparition au défilement ---------- */
-  var revealTargets = document.querySelectorAll('.section-head, .cards-4 .card, .feature, .vehicle, .step, .offer, .zone-map, .chips, .placeholder-block, .quick, .faq-list, .final-box');
+  var revealTargets = document.querySelectorAll('.section-head, .cards-4 .card, .review, .g-score, .person, .feature, .vehicle, .step, .offer, .zone-map, .chips, .placeholder-block, .quick, .faq-list, .final-box');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -191,23 +191,6 @@
   Array.prototype.forEach.call(document.querySelectorAll('[data-trails]'), function (c) {
     if (c.getContext) Trails(c);
   });
-
-  /* ---------- Sélecteur de style (maquette) ---------- */
-  var styleButtons = document.querySelectorAll('[data-set-style]');
-  function applyStyle(name) {
-    if (name) doc.setAttribute('data-style', name); else doc.removeAttribute('data-style');
-    Array.prototype.forEach.call(styleButtons, function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-set-style') === name));
-    });
-    try { localStorage.setItem('cp-style', name); } catch (e) {}
-  }
-  Array.prototype.forEach.call(styleButtons, function (b) {
-    b.addEventListener('click', function () { applyStyle(b.getAttribute('data-set-style')); });
-  });
-  var saved = null;
-  try { saved = localStorage.getItem('cp-style'); } catch (e) {}
-  var fromQuery = (location.search.match(/[?&]style=([a-z]+)/) || [])[1];
-  if (fromQuery || saved) applyStyle(fromQuery || saved);
 
   /* ---------- Année ---------- */
   var y = document.querySelector('[data-year]');

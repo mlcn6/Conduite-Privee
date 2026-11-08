@@ -20,9 +20,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;700;800&family=Jost:wght@200;300;400&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/styles-maquettes.css">
 
   <script type="application/ld+json">
   {
@@ -59,14 +58,14 @@
   <header class="site-header" data-header>
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Conduite Privée, accueil">
-        <img class="brand-logo brand-logo-dark" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
-        <img class="brand-logo brand-logo-light" src="assets/img/logo-conduite-privee.png" alt="" width="600" height="195">
+        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
       </a>
       <nav class="main-nav" id="menu" aria-label="Navigation principale">
         <a href="#services">Services</a>
         <a href="#flotte">Flotte</a>
         <a href="#fonctionnement">Réservation</a>
-        <a href="#zone">Zone desservie</a>
+        <a href="#zone">Zone</a>
+        <a href="#avis">Avis</a>
         <a href="#faq">FAQ</a>
         <a class="nav-mobile-only" href="tel:+33777496234">Appeler le 07 77 49 62 34</a>
       </nav>
@@ -98,6 +97,11 @@
             <li>Prestations privées et professionnelles</li>
             <li>Mercedes Classe V et Sprinter</li>
           </ul>
+          <!-- Note Google relevée sur la fiche de l'entreprise : à revérifier avant publication -->
+          <a class="g-badge" href="#avis">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><strong>5,0 sur 5</strong> · 6 avis Google</span>
+          </a>
         </div>
 
         <!-- Visuel : aperçu d'une demande de trajet (exemple d'illustration) -->
@@ -137,8 +141,8 @@
     <section class="stats" aria-label="Repères">
       <div class="wrap stats-grid">
         <div class="stat"><strong>2014</strong><span>En activité depuis plus de 12 ans</span></div>
-        <div class="stat"><strong>33</strong><span>Toute la Gironde, au départ de n'importe quelle adresse</span></div>
-        <div class="stat"><strong>NA</strong><span>Toute la Nouvelle-Aquitaine sur réservation</span></div>
+        <div class="stat"><strong>5,0<span class="stat-star" aria-hidden="true">★</span></strong><span>Note moyenne sur 6 avis Google</span></div>
+        <div class="stat"><strong>NA</strong><span>Départs partout en Gironde et en Nouvelle-Aquitaine</span></div>
         <div class="stat"><strong>7 · 8</strong><span>Places en Classe V et en Sprinter</span></div>
       </div>
     </section>
@@ -173,6 +177,48 @@
             <p>Mercedes Classe V et Sprinter, conduite souple et prise en charge soignée.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ AVIS GOOGLE ============ -->
+    <section class="section" id="avis" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="reviews-head">
+          <div class="section-head">
+            <p class="eyebrow">Avis clients</p>
+            <h2 id="reviews-title">Ils ont voyagé <span class="hl">avec nous</span></h2>
+          </div>
+          <!-- Note et nombre d'avis relevés sur la fiche Google : à revérifier avant publication -->
+          <div class="card g-score">
+            <div class="g-score-num">5,0</div>
+            <div class="g-score-meta">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span>Note moyenne sur <strong>6 avis Google</strong></span>
+            </div>
+            <div class="g-score-actions">
+              <a class="btn btn-ghost btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Conduite+Priv%C3%A9e+Lormont" rel="noopener">Voir les avis sur Google</a>
+            </div>
+          </div>
+        </div>
+        <!-- Avis réels à recopier depuis la fiche Google (texte, prénom, date), avec l'accord des auteurs si besoin -->
+        <div class="reviews-grid">
+          <figure class="card review">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°1, copié tel quel]</span></p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">A</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+          </figure>
+          <figure class="card review">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°2, copié tel quel]</span></p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">B</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+          </figure>
+          <figure class="card review">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°3, copié tel quel]</span></p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">C</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+          </figure>
+        </div>
+        <p class="reviews-note">Avis publiés par nos clients sur Google. Ils seront affichés tels quels, sans modification.</p>
       </div>
     </section>
 
@@ -409,14 +455,24 @@
       </div>
     </section>
 
-    <!-- ============ AVIS (emplacement) ============ -->
-    <section class="section section-tight" aria-labelledby="reviews-title">
+    <!-- ============ VOTRE INTERLOCUTEUR ============ -->
+    <section class="section section-tight" aria-labelledby="team-title">
       <div class="wrap">
-        <div class="card placeholder-block">
-          <p class="eyebrow">Ils nous font confiance</p>
-          <h2 id="reviews-title">Avis clients</h2>
-          <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span> <span class="ph" title="À vérifier avant publication">Note Google 5/5 · 6 avis (à vérifier avant publication)</span></p>
-          <p>Emplacement réservé aux avis Google réels et aux logos d'entreprises clientes, à intégrer avec leur accord. Aucun avis n'est inventé sur cette maquette.</p>
+        <div class="card person">
+          <div class="photo-slot person-photo" role="img" aria-label="Emplacement photo : Sébastien Luccioni, gérant">
+            <span class="slot-label">Photo à intégrer</span>
+            <span class="slot-desc">Portrait de Sébastien Luccioni</span>
+          </div>
+          <div class="person-copy">
+            <p class="eyebrow">Votre interlocuteur</p>
+            <h2 id="team-title">Une entreprise à taille humaine, <span class="hl">dirigée par son fondateur</span></h2>
+            <p>Conduite Privée est dirigée par Sébastien Luccioni depuis sa création en 2013. Vous échangez avec un interlocuteur identifié, de la demande de devis jusqu'au jour du trajet.</p>
+            <p class="signature">« Vous conduire, c'est notre métier »</p>
+            <div class="cta-row">
+              <a class="btn btn-primary btn-sm" href="#reserver">Demander un devis</a>
+              <a class="btn btn-ghost btn-sm" href="tel:+33777496234">Appeler le 07 77 49 62 34</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -464,7 +520,12 @@
           </div>
           <button class="btn btn-primary btn-block" type="submit">Continuer ma demande <span aria-hidden="true">→</span></button>
           <p class="quick-msg" role="status" aria-live="polite" data-quick-msg></p>
-          <p class="quick-note">Vos coordonnées et demandes particulières vous seront demandées à l'étape suivante.</p>
+          <ul class="quick-trust">
+            <li>Sans engagement</li>
+            <li>Devis personnalisé</li>
+            <li><span class="stars" aria-hidden="true">★★★★★</span> 5,0 sur Google</li>
+          </ul>
+          <p class="quick-note">Vos coordonnées et demandes particulières vous seront demandées à l'étape suivante. Vos données servent uniquement à traiter votre demande (<a href="confidentialite.html">politique de confidentialité</a>).</p>
         </form>
       </div>
     </section>
@@ -510,6 +571,7 @@
       <div class="wrap">
         <div class="final-box">
           <h2 id="cta-title">Où que vous soyez, <span class="hl">votre chauffeur vous attend.</span></h2>
+          <p class="final-rating"><span class="stars" aria-hidden="true">★★★★★</span> <span>5,0 sur 5 · 6 avis Google</span></p>
           <p>Devis personnalisé pour chaque demande. Téléphone&nbsp;: <a class="tel" href="tel:+33777496234">07 77 49 62 34</a></p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#reserver">Réserver un trajet <span aria-hidden="true">→</span></a>
@@ -525,8 +587,7 @@
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#top" aria-label="Conduite Privée, retour en haut">
-        <img class="brand-logo brand-logo-dark" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
-        <img class="brand-logo brand-logo-light" src="assets/img/logo-conduite-privee.png" alt="" width="600" height="195">
+        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
         </a>
         <p class="signature">« Vous conduire, c'est notre métier »</p>
         <p>Transport de personnes avec chauffeur en Gironde et en Nouvelle-Aquitaine depuis 2014.</p>
@@ -569,16 +630,6 @@
   <div class="mobile-bar" aria-label="Actions rapides">
     <a class="btn btn-ghost btn-sm" href="tel:+33777496234">Appeler</a>
     <a class="btn btn-primary btn-sm" href="#reserver">Réserver</a>
-  </div>
-
-  <!-- Sélecteur des 5 directions visuelles (outil de maquette, à retirer une fois le style choisi) -->
-  <div class="style-switch" role="group" aria-label="Choisir un style de maquette">
-    <span class="style-switch-label">Maquette · style</span>
-    <button type="button" data-set-style="" aria-pressed="true">1<span class="sw-name"> Nuit turquoise</span></button>
-    <button type="button" data-set-style="editorial" aria-pressed="false">2<span class="sw-name"> Éditorial blanc</span></button>
-    <button type="button" data-set-style="corporate" aria-pressed="false">3<span class="sw-name"> Bleu nuit</span></button>
-    <button type="button" data-set-style="minimal" aria-pressed="false">4<span class="sw-name"> Noir minimal</span></button>
-    <button type="button" data-set-style="signature" aria-pressed="false">5<span class="sw-name"> Signature</span></button>
   </div>
 
   <script src="assets/js/main.js" defer></script>

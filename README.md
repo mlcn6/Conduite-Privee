@@ -2,13 +2,11 @@
 
 Site vitrine de **CONDUITE PRIVÉE** (SARL, Lormont · Bordeaux), transport privé de voyageurs : transferts aéroport et gare, navettes d'entreprise, trajets privés sur réservation.
 
-## Contenu actuel : maquette v5 de la page d'accueil
+## Contenu actuel : maquette v6 de la page d'accueil
 
 ```
 index.html            page d'accueil (HTML sémantique, SEO, JSON-LD LocalBusiness)
-assets/css/style.css  identité visuelle (style 1 par défaut)
-assets/css/styles-maquettes.css  4 autres directions visuelles + sélecteur de style
-                      (thème sombre, accent turquoise du logo officiel)
+assets/css/style.css  identité visuelle (style « Nuit turquoise » retenu) (thème sombre, accent turquoise du logo officiel)
 assets/js/main.js     menu, en-tête au défilement, demande rapide, animations
 assets/img/           logos officiels (original, variante fond sombre, monogramme, favicon)
 ```
@@ -23,7 +21,9 @@ Tous les éléments manquants sont marqués `<span class="ph">[…]</span>` (sou
 
 - e-mail commercial, horaires
 - année du Sprinter, capacité bagages (aucun équipement non confirmé n'est affiché)
-- note Google 5/5 (6 avis) à revérifier avant publication
+- note Google 5,0/5 (6 avis) affichée dans le hero, les chiffres, la section Avis, le formulaire et l'appel final : à revérifier avant publication
+- texte, prénom et date de 3 avis Google réels (section Avis)
+- portrait de Sébastien Luccioni (section Votre interlocuteur)
 - domaine www.conduiteprivee.com à vérifier avant configuration DNS
 - délai de réservation conseillé (FAQ)
 - numéro d'inscription au registre VTC (FAQ, pied de page)
@@ -40,6 +40,3 @@ Dans `assets/js/main.js`, l'objet `BOOKING` centralise l'envoi :
 
 ### Prochaines étapes
 Pages Services, Flotte, À propos, Réservation et devis, Contact (avec carte), Mentions légales, Politique de confidentialité RGPD, bandeau cookies, sitemap.xml et robots.txt.
-
-### Comparer les 5 styles
-Un sélecteur en bas de page permet de basculer entre les 5 directions : 1 Nuit turquoise, 2 Éditorial blanc, 3 Bleu nuit, 4 Noir minimal, 5 Signature. On peut aussi ouvrir directement `index.html?style=editorial` (ou `corporate`, `minimal`, `signature`). Une fois le style choisi, ses règles seront fusionnées dans `style.css` et le sélecteur retiré.
