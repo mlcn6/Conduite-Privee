@@ -192,6 +192,10 @@
     if (c.getContext) Trails(c);
   });
 
+  /* ---------- Vidéo du hero : pause si mouvement réduit ---------- */
+  var heroVideo = document.querySelector('[data-hero-video]');
+  if (heroVideo && reduceMotion) { heroVideo.removeAttribute('autoplay'); heroVideo.pause(); }
+
   /* ---------- Année ---------- */
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();

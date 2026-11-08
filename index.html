@@ -15,8 +15,7 @@
   <meta property="og:site_name" content="Conduite Privée">
   <meta property="og:title" content="Conduite Privée | VTC premium en Gironde et Nouvelle-Aquitaine">
   <meta property="og:description" content="VTC premium et chauffeur privé : départ de l'adresse de votre choix partout en Gironde et en Nouvelle-Aquitaine, en Mercedes Classe V et Sprinter.">
-  <meta property="og:image" content="assets/img/logo-cp.png">
-  <!-- À remplacer par une vraie photo de la Classe V (1200×630) -->
+  <meta property="og:image" content="assets/img/chauffeur-hotel-1.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,8 +80,12 @@
 
   <main id="contenu">
     <!-- ============ HERO ============ -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero hero-video" id="top" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" data-hero-video>
+          <source src="assets/video/hero-classe-v.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="pill"><span class="pill-dot" aria-hidden="true"></span>« Vous conduire, c'est notre métier »</p>
@@ -97,42 +100,10 @@
             <li>Prestations privées et professionnelles</li>
             <li>Mercedes Classe V et Sprinter</li>
           </ul>
-          <!-- Note Google relevée sur la fiche de l'entreprise : à revérifier avant publication -->
           <a class="g-badge" href="#avis">
             <span class="stars" aria-hidden="true">★★★★★</span>
             <span><strong>5,0 sur 5</strong> · 6 avis Google</span>
           </a>
-        </div>
-
-        <!-- Visuel : aperçu d'une demande de trajet (exemple d'illustration) -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="mock mock-main">
-            <div class="mock-bar"><span></span><span></span><span></span><em>Demande de trajet</em></div>
-            <div class="mock-body">
-              <div class="mock-route">
-                <div class="stop"><span class="stop-dot"></span><div><small>Départ</small><strong>Saint-Émilion</strong></div></div>
-                <div class="stop-line"></div>
-                <div class="stop"><span class="stop-dot stop-dot-end"></span><div><small>Destination</small><strong>Aéroport Bordeaux-Mérignac</strong></div></div>
-                <span class="code-badge">BOD</span>
-              </div>
-              <div class="mock-grid">
-                <div><small>Véhicule</small><strong>Mercedes Classe V</strong></div>
-                <div><small>Passagers</small><strong>4</strong></div>
-                <div><small>Bagages</small><strong>4 valises</strong></div>
-                <div><small>Horaire</small><strong>06:15</strong></div>
-              </div>
-              <ol class="mock-steps">
-                <li class="done">Demande reçue</li>
-                <li class="done">Devis envoyé</li>
-                <li class="current">Prise en charge confirmée</li>
-              </ol>
-            </div>
-          </div>
-          <div class="mock mock-float">
-            <span class="float-icon">✓</span>
-            <div><strong>Trajet confirmé</strong><small>Votre chauffeur vous attend à l'heure convenue</small></div>
-          </div>
-          <p class="mock-note">Exemple d'illustration</p>
         </div>
       </div>
     </section>
@@ -188,7 +159,6 @@
             <p class="eyebrow">Avis clients</p>
             <h2 id="reviews-title">Ils ont voyagé <span class="hl">avec nous</span></h2>
           </div>
-          <!-- Note et nombre d'avis relevés sur la fiche Google : à revérifier avant publication -->
           <div class="card g-score">
             <div class="g-score-num">5,0</div>
             <div class="g-score-meta">
@@ -200,25 +170,30 @@
             </div>
           </div>
         </div>
-        <!-- Avis réels à recopier depuis la fiche Google (texte, prénom, date), avec l'accord des auteurs si besoin -->
+        <!-- Avis Google réels, recopiés sans modification (prénom et initiale du nom uniquement) -->
         <div class="reviews-grid">
           <figure class="card review">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°1, copié tel quel]</span></p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">A</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
+            <blockquote><p>Excellente expérience . Chauffeur très sympathique, souriant et respectueux, avec une conduite agréable et sécurisante. Le trajet est passé très vite et s'est déroulé dans un grand confort. Merci encore pour ce service de qualité .</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">A</span><span><strong>Adam L.</strong><small>Avis Google · visite en février</small></span></figcaption>
           </figure>
           <figure class="card review">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°2, copié tel quel]</span></p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">B</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
+            <blockquote><p>Très bon service avec conduite, privé, chauffeur ponctuel, véhicule propre et trajet, agréable. Réservation facile, équipe sérieuse, je recommande.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">Y</span><span><strong>Yasmine M.</strong><small>Avis Google · visite en février</small></span></figcaption>
           </figure>
           <figure class="card review">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <blockquote><p><span class="ph" title="À compléter">[Texte de l'avis Google n°3, copié tel quel]</span></p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">C</span><span><strong><span class="ph" title="À compléter">[Prénom N.]</span></strong><small>Avis Google · <span class="ph" title="À compléter">[date]</span></small></span></figcaption>
+            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
+            <blockquote><p>exellent chauffeurs très agréable et courtois de plus ils sont ponctuel. Réservation rapide et simple je conseille fortement !</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">L</span><span><strong>Liam M.</strong><small>Avis Google · visite en février</small></span></figcaption>
+          </figure>
+          <figure class="card review">
+            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
+            <blockquote><p>J'ai eu une excellente expérience avec la société Conduite Privée. Service très professionnel du début à la fin. Le chauffeur était ponctuel, courtois et la…</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">G</span><span><strong>Garance D.</strong><small>Avis Google · visite en février</small></span></figcaption>
           </figure>
         </div>
-        <p class="reviews-note">Avis publiés par nos clients sur Google. Ils seront affichés tels quels, sans modification.</p>
+        <p class="reviews-note">Avis publiés par nos clients sur Google, reproduits sans modification. 6 avis, tous notés 5/5.</p>
       </div>
     </section>
 
@@ -321,6 +296,16 @@
       </div>
     </section>
 
+    <!-- ============ BANDEAU PHOTO ============ -->
+    <section class="photo-band" aria-label="Accueil des passagers">
+      <img src="assets/img/chauffeur-hotel-1.jpg" alt="Chauffeur en costume ouvrant la porte d'une Mercedes Classe V devant un hôtel" width="1600" height="893" loading="lazy">
+      <div class="wrap photo-band-copy">
+        <p class="eyebrow">Prise en charge</p>
+        <p class="photo-band-quote">Votre chauffeur vous attend, <span class="hl">la porte ouverte.</span></p>
+        <a class="btn btn-primary" href="#reserver">Réserver un trajet <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
     <!-- ============ FLOTTE ============ -->
     <section class="section" id="flotte" aria-labelledby="fleet-title">
       <div class="wrap">
@@ -330,10 +315,7 @@
         </div>
         <div class="fleet-grid">
           <article class="card vehicle">
-            <div class="photo-slot" role="img" aria-label="Emplacement photo : Mercedes-Benz Classe V">
-              <span class="slot-label">Photo à intégrer</span>
-              <span class="slot-desc">Vraie photo de la Classe V 2022 de l'entreprise</span>
-            </div>
+            <img class="vehicle-photo" src="assets/img/classe-v-nuit.jpg" alt="Mercedes-Benz Classe V noire stationnée de nuit" width="1600" height="893" loading="lazy">
             <div class="vehicle-body">
               <h3>Mercedes-Benz Classe V</h3>
               <p>Véhicule premium pour les transferts professionnels, les déplacements privés et les petits groupes, avec une présentation haut de gamme.</p>

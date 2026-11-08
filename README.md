@@ -8,7 +8,8 @@ Site vitrine de **CONDUITE PRIVÉE** (SARL, Lormont · Bordeaux), transport priv
 index.html            page d'accueil (HTML sémantique, SEO, JSON-LD LocalBusiness)
 assets/css/style.css  identité visuelle (style « Nuit turquoise » retenu) (thème sombre, accent turquoise du logo officiel)
 assets/js/main.js     menu, en-tête au défilement, demande rapide, animations
-assets/img/           logos officiels (original, variante fond sombre, monogramme, favicon)
+assets/img/           logos officiels, photos (plaque floutée) et image de la vidéo
+assets/video/         vidéo du hero, compressée pour le web (1280 px, sans son)
 ```
 
 Site statique sans dépendance : ouvrir `index.html` dans un navigateur suffit.
@@ -21,13 +22,12 @@ Tous les éléments manquants sont marqués `<span class="ph">[…]</span>` (sou
 
 - e-mail commercial, horaires
 - année du Sprinter, capacité bagages (aucun équipement non confirmé n'est affiché)
-- note Google 5,0/5 (6 avis) affichée dans le hero, les chiffres, la section Avis, le formulaire et l'appel final : à revérifier avant publication
-- texte, prénom et date de 3 avis Google réels (section Avis)
+- texte complet de l'avis de Garance D. (tronqué sur la capture)
 - portrait de Sébastien Luccioni (section Votre interlocuteur)
 - domaine www.conduiteprivee.com à vérifier avant configuration DNS
 - délai de réservation conseillé (FAQ)
 - numéro d'inscription au registre VTC (FAQ, pied de page)
-- photos : hero plein cadre, chauffeur, Classe V, Sprinter, image de partage (og:image)
+- photo du Sprinter ; remplacer à terme les visuels fournis (vidéo à plaque britannique, photos d'illustration) par des photos des véhicules de l'entreprise
 - avis clients vérifiés et logos partenaires (aucun avis inventé)
 - URL définitive (`<link rel="canonical">`)
 
