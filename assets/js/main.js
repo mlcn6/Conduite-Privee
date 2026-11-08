@@ -1,4 +1,4 @@
-/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v2) */
+/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v3) */
 (function () {
   'use strict';
 
@@ -26,6 +26,7 @@
   var header = document.querySelector('[data-header]');
   var mobileBar = document.querySelector('.mobile-bar');
   var hero = document.querySelector('.hero');
+  // La barre mobile apparaît une fois le hero dépassé.
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
     if (header) header.classList.toggle('is-scrolled', y > 24);
@@ -86,7 +87,7 @@
       }
       BOOKING.submitRequest(payload).then(function () {
         msg.textContent = 'Merci. Votre trajet ' + payload.depart + ' → ' + payload.destination +
-          ' est prêt à être complété (bagages, coordonnées) sur la page Réservation, à venir.';
+          ' est prêt à être complété (coordonnées, demandes particulières) sur la page Réservation, à venir.';
       });
     });
     form.addEventListener('input', function (e) {
@@ -95,7 +96,7 @@
   }
 
   /* ---------- Apparition au défilement ---------- */
-  var revealTargets = document.querySelectorAll('.section-head, .service, .vehicle, .step-list li, .maison-copy, .maison-photo, .zone-map, .places, .placeholder-block, .faq-list, .cta-inner');
+  var revealTargets = document.querySelectorAll('.section-head, .cards-3 .card, .feature, .vehicle, .step, .offer, .zone-map, .chips, .placeholder-block, .quick, .faq-list, .final-box');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
