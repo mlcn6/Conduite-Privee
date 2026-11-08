@@ -2,7 +2,7 @@
 
 Site vitrine de **CONDUITE PRIVÉE** (SARL, Lormont · Bordeaux), transport privé de voyageurs : transferts aéroport et gare, navettes d'entreprise, trajets privés sur réservation.
 
-## Contenu actuel : maquette v3 de la page d'accueil
+## Contenu actuel : maquette v4 de la page d'accueil
 
 ```
 index.html            page d'accueil (HTML sémantique, SEO, JSON-LD LocalBusiness)
@@ -21,6 +21,7 @@ Tous les éléments manquants sont marqués `<span class="ph">[…]</span>` (sou
 - téléphone, e-mail, horaires
 - capacités (passagers, bagages) et équipements de chaque véhicule
 - délai de réservation conseillé (FAQ)
+- numéro d'inscription au registre VTC (FAQ, pied de page)
 - photos : hero plein cadre, chauffeur, Classe V, Sprinter, image de partage (og:image)
 - avis clients vérifiés et logos partenaires (aucun avis inventé)
 - URL définitive (`<link rel="canonical">`)

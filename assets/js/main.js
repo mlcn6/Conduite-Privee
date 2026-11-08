@@ -1,4 +1,4 @@
-/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v3) */
+/* CONDUITE PRIVÉE — scripts de la page d'accueil (maquette v4) */
 (function () {
   'use strict';
 
@@ -96,7 +96,7 @@
   }
 
   /* ---------- Apparition au défilement ---------- */
-  var revealTargets = document.querySelectorAll('.section-head, .cards-3 .card, .feature, .vehicle, .step, .offer, .zone-map, .chips, .placeholder-block, .quick, .faq-list, .final-box');
+  var revealTargets = document.querySelectorAll('.section-head, .cards-4 .card, .feature, .vehicle, .step, .offer, .zone-map, .chips, .placeholder-block, .quick, .faq-list, .final-box');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
