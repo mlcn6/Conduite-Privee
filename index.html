@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>VTC premium Bordeaux, Gironde et Nouvelle-Aquitaine | Conduite Privée</title>
-  <meta name="description" content="Conduite Privée, VTC premium et chauffeur privé depuis 2013 : prise en charge à l'adresse de votre choix partout en Gironde et en Nouvelle-Aquitaine, transferts aéroport Bordeaux-Mérignac et gares, prestations privées et professionnelles en Mercedes Classe V et Sprinter.">
+  <meta name="description" content="Conduite Privée, VTC premium et chauffeur privé depuis 2014 : prise en charge à l'adresse de votre choix partout en Gironde et en Nouvelle-Aquitaine, en Mercedes Classe V et Sprinter. Note Google 5/5.">
   <!-- Domaine historique www.conduiteprivee.com : à vérifier avant publication -->
   <link rel="canonical" href="https://www.conduiteprivee.com/">
-  <meta name="theme-color" content="#07090d">
+  <meta name="theme-color" content="#0d2427">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Conduite Privée">
   <meta property="og:title" content="Conduite Privée | VTC premium en Gironde et Nouvelle-Aquitaine">
-  <meta property="og:description" content="VTC premium et chauffeur privé : départ de l'adresse de votre choix partout en Gironde et en Nouvelle-Aquitaine, en Mercedes Classe V et Sprinter.">
+  <meta property="og:description" content="Votre chauffeur privé vous attend à l'adresse de votre choix, en Mercedes Classe V ou Sprinter. Note Google 5/5.">
   <meta property="og:image" content="assets/img/chauffeur-hotel-1.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script type="application/ld+json">
@@ -60,17 +60,17 @@
         <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
       </a>
       <nav class="main-nav" id="menu" aria-label="Navigation principale">
-        <a href="#services">Services</a>
+        <a href="#experience">L'expérience</a>
+        <a href="#services">Prestations</a>
         <a href="#flotte">Flotte</a>
-        <a href="#fonctionnement">Réservation</a>
-        <a href="#zone">Zone</a>
         <a href="#avis">Avis</a>
+        <a href="#zone">Zone</a>
         <a href="#faq">FAQ</a>
         <a class="nav-mobile-only" href="tel:+33777496234">Appeler le 07 77 49 62 34</a>
       </nav>
       <div class="header-actions">
-        <a class="header-phone" href="tel:+33777496234">07 77 49 62 34</a>
-        <a class="btn btn-primary btn-sm" href="#reserver">Demander un devis</a>
+        <a class="header-phone" href="tel:+33777496234"><span class="dot" aria-hidden="true"></span>07 77 49 62 34</a>
+        <a class="btn btn-light btn-sm" href="#reserver">Réserver</a>
       </div>
       <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu" data-burger>
         <span></span><span></span>
@@ -80,343 +80,208 @@
 
   <main id="contenu">
     <!-- ============ HERO ============ -->
-    <section class="hero hero-video" id="top" aria-labelledby="hero-title">
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
         <video autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" data-hero-video>
           <source src="assets/video/hero-classe-v.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="pill"><span class="pill-dot" aria-hidden="true"></span>« Vous conduire, c'est notre métier »</p>
-          <h1 id="hero-title"><span class="h1-a">Votre VTC premium,</span> <span class="hl">au départ de l'adresse de votre choix.</span></h1>
-          <p class="lead">Chauffeur privé et prestations sur réservation, partout en Gironde et en Nouvelle-Aquitaine : domicile, hôtel, bureau, aéroport ou gare. Vous choisissez le point de départ, nous nous occupons du reste, à bord d'une Mercedes Classe V ou d'un Sprinter.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#reserver">Réserver un trajet <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" href="#reserver">Demander un devis</a>
+      <div class="wrap hero-inner">
+        <p class="kicker">VTC premium · Gironde &amp; Nouvelle-Aquitaine</p>
+        <h1 id="hero-title">Le privilège <em>d'être attendu.</em></h1>
+        <p class="lead">Votre chauffeur privé vous accueille à l'adresse de votre choix, à bord d'une Mercedes Classe V. Vous n'avez plus qu'à vous installer.</p>
+        <a class="rating-line" href="#avis">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><strong>5,0</strong> · 6 avis Google, tous 5/5</span>
+        </a>
+      </div>
+
+      <!-- Barre de réservation : point d'entrée de la conversion -->
+      <div class="wrap booking-wrap" id="reserver">
+        <form class="booking" data-quick novalidate aria-label="Demande de réservation">
+          <div class="field field-from">
+            <label for="q-from">Départ</label>
+            <input id="q-from" name="depart" type="text" autocomplete="street-address" placeholder="Adresse, hôtel, gare…" required>
           </div>
-          <ul class="micro">
-            <li>Départ partout en Nouvelle-Aquitaine</li>
-            <li>Prestations privées et professionnelles</li>
-            <li>Mercedes Classe V et Sprinter</li>
-          </ul>
-          <a class="g-badge" href="#avis">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <span><strong>5,0 sur 5</strong> · 6 avis Google</span>
-          </a>
-        </div>
+          <div class="field field-to">
+            <label for="q-to">Destination</label>
+            <input id="q-to" name="destination" type="text" placeholder="Ex. Aéroport de Mérignac" required>
+          </div>
+          <div class="field">
+            <label for="q-date">Date</label>
+            <input id="q-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="q-time">Heure</label>
+            <input id="q-time" name="heure" type="time" required>
+          </div>
+          <div class="field field-pax">
+            <label for="q-pax">Passagers</label>
+            <select id="q-pax" name="passagers">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option value="9+">9 et plus</option>
+            </select>
+          </div>
+          <button class="btn btn-accent booking-submit" type="submit">Obtenir mon devis</button>
+          <p class="booking-foot"><span>Sans engagement</span><span>Devis personnalisé</span><span>Ou appelez le <a href="tel:+33777496234">07 77 49 62 34</a></span></p>
+          <p class="quick-msg" role="status" aria-live="polite" data-quick-msg></p>
+        </form>
       </div>
     </section>
 
-    <!-- ============ CHIFFRES ============ -->
-    <section class="stats" aria-label="Repères">
-      <div class="wrap stats-grid">
-        <div class="stat"><strong>2014</strong><span>En activité depuis plus de 12 ans</span></div>
-        <div class="stat"><strong>5,0<span class="stat-star" aria-hidden="true">★</span></strong><span>Note moyenne sur 6 avis Google</span></div>
-        <div class="stat"><strong>NA</strong><span>Départs partout en Gironde et en Nouvelle-Aquitaine</span></div>
-        <div class="stat"><strong>7 · 8</strong><span>Places en Classe V et en Sprinter</span></div>
+    <!-- ============ REPÈRES ============ -->
+    <section class="proof" aria-label="Repères">
+      <div class="wrap proof-row">
+        <p><strong>Depuis 2014</strong><span>au service des voyageurs</span></p>
+        <p><strong>Mercedes Classe V</strong><span>modèle 2022, 7 passagers</span></p>
+        <p><strong>Mercedes Sprinter</strong><span>8 passagers</span></p>
+        <p><strong>Gironde &amp; Nouvelle-Aquitaine</strong><span>départ de l'adresse de votre choix</span></p>
       </div>
     </section>
 
     <!-- ============ L'EXPÉRIENCE ============ -->
-    <section class="section" id="experience" aria-labelledby="why-title">
-      <div class="wrap">
-        <div class="section-head center">
+    <section class="section light" id="experience" aria-labelledby="exp-title">
+      <div class="wrap exp-grid">
+        <figure class="exp-photo">
+          <img src="assets/img/chauffeur-hotel-1.jpg" alt="Chauffeur en costume ouvrant la porte d'une Mercedes Classe V devant un hôtel" width="1600" height="893">
+        </figure>
+        <div class="exp-copy">
           <p class="eyebrow">L'expérience Conduite Privée</p>
-          <h2 id="why-title">Bien plus qu'un trajet : <span class="hl">un service de chauffeur privé</span></h2>
-          <p>Un VTC premium, c'est un véhicule haut de gamme, un chauffeur ponctuel et discret, et une prise en charge à l'endroit exact où vous êtes.</p>
-        </div>
-        <div class="cards-4">
-          <article class="card">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-            <h3>Départ où vous voulez</h3>
-            <p>Domicile, hôtel, bureau, château, aéroport ou gare : partout en Gironde et en Nouvelle-Aquitaine.</p>
-          </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-            <h3>Ponctualité</h3>
-            <p>Horaires anticipés et itinéraires préparés : votre chauffeur est là à l'heure convenue.</p>
-          </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><path d="M4 4l16 16"/></svg></span>
-            <h3>Discrétion</h3>
-            <p>Vos échanges, vos rendez-vous et vos déplacements restent strictement confidentiels.</p>
-          </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-            <h3>Confort et sécurité</h3>
-            <p>Mercedes Classe V et Sprinter, conduite souple et prise en charge soignée.</p>
-          </article>
+          <h2 id="exp-title">Dès la prise en charge, <em>vous êtes notre invité.</em></h2>
+          <p class="intro">Un VTC premium, ce n'est pas seulement un trajet. C'est un chauffeur ponctuel et discret, un véhicule haut de gamme et une attention portée à chaque détail, du premier appel à la dépose.</p>
+          <ol class="moments">
+            <li><span>01</span><div><h3>Il vous attend</h3><p>À l'adresse et à l'heure convenues : domicile, hôtel, bureau, aéroport ou gare.</p></div></li>
+            <li><span>02</span><div><h3>Vous vous installez</h3><p>Bagages chargés, portière ouverte, un habitacle spacieux et soigné.</p></div></li>
+            <li><span>03</span><div><h3>Le trajet vous appartient</h3><p>Conduite souple, discrétion totale : travaillez, appelez ou reposez-vous.</p></div></li>
+            <li><span>04</span><div><h3>Vous arrivez serein</h3><p>Dépose au plus près de votre destination, à l'heure prévue.</p></div></li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- ============ AVIS GOOGLE ============ -->
-    <section class="section" id="avis" aria-labelledby="reviews-title">
+    <!-- ============ AVIS ============ -->
+    <section class="section dark" id="avis" aria-labelledby="avis-title">
       <div class="wrap">
-        <div class="reviews-head">
-          <div class="section-head">
-            <p class="eyebrow">Avis clients</p>
-            <h2 id="reviews-title">Ils ont voyagé <span class="hl">avec nous</span></h2>
+        <div class="avis-head">
+          <div>
+            <p class="eyebrow">Avis Google</p>
+            <h2 id="avis-title">Ils en parlent <em>mieux que nous.</em></h2>
           </div>
-          <div class="card g-score">
-            <div class="g-score-num">5,0</div>
-            <div class="g-score-meta">
-              <span class="stars" aria-hidden="true">★★★★★</span>
-              <span>Note moyenne sur <strong>6 avis Google</strong></span>
-            </div>
-            <div class="g-score-actions">
-              <a class="btn btn-ghost btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Conduite+Priv%C3%A9e+Lormont" rel="noopener">Voir les avis sur Google</a>
-            </div>
+          <div class="score">
+            <span class="score-num">5,0</span>
+            <span class="score-meta"><span class="stars" aria-hidden="true">★★★★★</span><span>6 avis Google, tous notés 5/5</span></span>
           </div>
         </div>
-        <!-- Avis Google réels, recopiés sans modification (prénom et initiale du nom uniquement) -->
-        <div class="reviews-grid">
-          <figure class="card review">
-            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
-            <blockquote><p>Excellente expérience . Chauffeur très sympathique, souriant et respectueux, avec une conduite agréable et sécurisante. Le trajet est passé très vite et s'est déroulé dans un grand confort. Merci encore pour ce service de qualité .</p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">A</span><span><strong>Adam L.</strong><small>Avis Google · visite en février</small></span></figcaption>
+        <div class="avis-grid">
+          <figure class="quote quote-main">
+            <blockquote><p>« Excellente expérience . Chauffeur très sympathique, souriant et respectueux, avec une conduite agréable et sécurisante. Le trajet est passé très vite et s'est déroulé dans un grand confort. Merci encore pour ce service de qualité . »</p></blockquote>
+            <figcaption><span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><strong>Adam L.</strong><small>Avis Google</small></figcaption>
           </figure>
-          <figure class="card review">
-            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
-            <blockquote><p>Très bon service avec conduite, privé, chauffeur ponctuel, véhicule propre et trajet, agréable. Réservation facile, équipe sérieuse, je recommande.</p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">Y</span><span><strong>Yasmine M.</strong><small>Avis Google · visite en février</small></span></figcaption>
+          <figure class="quote">
+            <blockquote><p>« Très bon service avec conduite, privé, chauffeur ponctuel, véhicule propre et trajet, agréable. Réservation facile, équipe sérieuse, je recommande. »</p></blockquote>
+            <figcaption><span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><strong>Yasmine M.</strong><small>Avis Google</small></figcaption>
           </figure>
-          <figure class="card review">
-            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
-            <blockquote><p>exellent chauffeurs très agréable et courtois de plus ils sont ponctuel. Réservation rapide et simple je conseille fortement !</p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">L</span><span><strong>Liam M.</strong><small>Avis Google · visite en février</small></span></figcaption>
+          <figure class="quote">
+            <blockquote><p>« exellent chauffeurs très agréable et courtois de plus ils sont ponctuel. Réservation rapide et simple je conseille fortement ! »</p></blockquote>
+            <figcaption><span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><strong>Liam M.</strong><small>Avis Google</small></figcaption>
           </figure>
-          <figure class="card review">
-            <span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span>
-            <blockquote><p>J'ai eu une excellente expérience avec la société Conduite Privée. Service très professionnel du début à la fin. Le chauffeur était ponctuel, courtois et la…</p></blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">G</span><span><strong>Garance D.</strong><small>Avis Google · visite en février</small></span></figcaption>
+          <figure class="quote">
+            <blockquote><p>« J'ai eu une excellente expérience avec la société Conduite Privée. Service très professionnel du début à la fin. Le chauffeur était ponctuel, courtois et la… »</p></blockquote>
+            <figcaption><span class="stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><strong>Garance D.</strong><small>Avis Google</small></figcaption>
           </figure>
         </div>
-        <p class="reviews-note">Avis publiés par nos clients sur Google, reproduits sans modification. 6 avis, tous notés 5/5.</p>
+        <div class="avis-foot">
+          <p>Avis reproduits sans modification.</p>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Conduite+Priv%C3%A9e+Lormont" rel="noopener">Voir tous les avis sur Google</a>
+        </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section" id="services" aria-labelledby="services-title">
+    <!-- ============ PRESTATIONS ============ -->
+    <section class="section light" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <div class="section-head center">
+        <div class="section-head">
           <p class="eyebrow">Nos prestations</p>
-          <h2 id="services-title">Le transport professionnel et privé, <span class="hl">avec chauffeur</span></h2>
-          <p>Entreprises, collaborateurs en déplacement, familles ou petits groupes : chaque trajet est organisé sur réservation, au départ de l'adresse de votre choix.</p>
+          <h2 id="services-title">Un chauffeur privé <em>pour chaque occasion.</em></h2>
         </div>
-
-        <div class="feature">
-          <div class="feature-copy">
-            <span class="tag">Professionnels</span>
-            <h3>Transport professionnel et mise à disposition</h3>
-            <p>Dirigeants, collaborateurs en mission, consultants, intervenants ou visiteurs : un chauffeur pour vos rendez-vous, à la course ou mis à disposition le temps de votre programme.</p>
-            <ul class="checks">
-              <li>Déplacements de dirigeants et de collaborateurs</li>
-              <li>Accueil de visiteurs et d'intervenants extérieurs</li>
-              <li>Mise à disposition d'un véhicule avec chauffeur</li>
-            </ul>
-          </div>
-          <div class="feature-visual" aria-hidden="true">
-            <div class="mini-board">
-              <div class="board-row board-head"><span>Programme</span><span>Véhicule</span></div>
-              <div class="board-row"><span>Hôtel → Rendez-vous client</span><span class="chip">Classe V</span></div>
-              <div class="board-row"><span>Visite de site en Gironde</span><span class="chip">Classe V</span></div>
-              <div class="board-row"><span>Retour gare Saint-Jean</span><span class="chip">Classe V</span></div>
-              <p class="mock-note">Exemple de programme</p>
-            </div>
-          </div>
+        <div class="services">
+          <article class="service">
+            <p class="service-for">Professionnels</p>
+            <h3>Déplacements d'affaires et mise à disposition</h3>
+            <p>Dirigeants, collaborateurs, consultants ou visiteurs : un chauffeur pour vos rendez-vous, à la course ou le temps de votre programme.</p>
+            <a class="link" href="#reserver">Demander un devis</a>
+          </article>
+          <article class="service">
+            <p class="service-for">Entreprises</p>
+            <h3>Navettes et liaisons longue distance</h3>
+            <p>Navettes régulières, ponctuelles ou contractualisées pour vos équipes, et liaisons interurbaines au départ de la région bordelaise.</p>
+            <a class="link" href="#reserver">Demander un devis</a>
+          </article>
+          <article class="service">
+            <p class="service-for">Voyageurs</p>
+            <h3>Transferts aéroport et gare</h3>
+            <p>Prise en charge à votre adresse et dépose à l'aéroport de Bordeaux-Mérignac, à la gare Saint-Jean ou dans les gares de la région.</p>
+            <a class="link" href="#reserver">Demander un devis</a>
+          </article>
+          <article class="service">
+            <p class="service-for">Particuliers &amp; groupes</p>
+            <h3>Trajets privés et petits groupes</h3>
+            <p>Soirées, événements, voyages en famille ou entre amis : jusqu'à 8 passagers, sur réservation, partout en Nouvelle-Aquitaine.</p>
+            <a class="link" href="#reserver">Demander un devis</a>
+          </article>
         </div>
-
-        <div class="feature feature-rev">
-          <div class="feature-copy">
-            <span class="tag">Entreprises</span>
-            <h3>Navettes d'entreprise et longues distances</h3>
-            <p>Navettes régulières, ponctuelles ou contractualisées pour vos salariés, et liaisons professionnelles longue distance entre la région bordelaise et d'autres pôles d'activité.</p>
-            <ul class="checks">
-              <li>Trajets récurrents pour vos équipes</li>
-              <li>Liaisons interurbaines sur devis</li>
-              <li>Interlocuteur unique pour les RH, services généraux et achats</li>
-            </ul>
-          </div>
-          <div class="feature-visual" aria-hidden="true">
-            <div class="mini-board">
-              <div class="board-row board-head"><span>Liaison</span><span>Type</span></div>
-              <div class="board-row"><span>Bordeaux → Toulouse</span><span class="chip chip-ok">Longue distance</span></div>
-              <div class="board-row"><span>Bordeaux → Châtellerault</span><span class="chip chip-ok">Longue distance</span></div>
-              <div class="board-row"><span>Domicile → Site de production</span><span class="chip">Navette</span></div>
-              <p class="mock-note">Exemples de liaisons déjà réalisées ou possibles</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-copy">
-            <span class="tag">Aéroports &amp; gares</span>
-            <h3>Transferts vers les gares et aéroports</h3>
-            <p>Prise en charge à votre adresse et dépose à l'aéroport de Bordeaux-Mérignac, à la gare Saint-Jean ou dans les gares et aéroports de la région.</p>
-            <ul class="checks">
-              <li>Aéroport de Bordeaux-Mérignac (BOD)</li>
-              <li>Gare Bordeaux Saint-Jean</li>
-              <li>Conditions de prise en charge précisées au devis</li>
-            </ul>
-          </div>
-          <div class="feature-visual" aria-hidden="true">
-            <div class="mini-board">
-              <div class="board-row board-head"><span>Trajet</span><span>Code</span></div>
-              <div class="board-row"><span>Arcachon → Aéroport de Mérignac</span><span class="mono">BOD</span></div>
-              <div class="board-row"><span>Saint-Émilion → Gare Saint-Jean</span><span class="mono">BDX</span></div>
-              <div class="board-row"><span>Aéroport de Mérignac → Cap Ferret</span><span class="mono">BOD</span></div>
-              <p class="mock-note">Exemples de trajets</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature feature-rev">
-          <div class="feature-copy">
-            <span class="tag">Particuliers &amp; groupes</span>
-            <h3>Transport privé et petits groupes</h3>
-            <p>Un trajet personnalisé sur réservation pour vous, votre famille ou un petit groupe, en van ou en minibus selon le nombre de passagers.</p>
-            <ul class="checks">
-              <li>Trajets privés sur réservation</li>
-              <li>Familles et petits groupes jusqu'à 8 passagers</li>
-              <li>Déplacements longue distance sur devis</li>
-            </ul>
-          </div>
-          <div class="feature-visual" aria-hidden="true">
-            <div class="mini-board">
-              <div class="board-row board-head"><span>Demande</span><span>Véhicule</span></div>
-              <div class="board-row"><span>Bordeaux → Biarritz, 6 passagers</span><span class="chip">Classe V</span></div>
-              <div class="board-row"><span>Soirée à Bordeaux, 4 passagers</span><span class="chip">Classe V</span></div>
-              <div class="board-row"><span>Sortie en groupe, 8 passagers</span><span class="chip">Sprinter</span></div>
-              <p class="mock-note">Exemples de demandes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ BANDEAU PHOTO ============ -->
-    <section class="photo-band" aria-label="Accueil des passagers">
-      <img src="assets/img/chauffeur-hotel-1.jpg" alt="Chauffeur en costume ouvrant la porte d'une Mercedes Classe V devant un hôtel" width="1600" height="893" loading="lazy">
-      <div class="wrap photo-band-copy">
-        <p class="eyebrow">Prise en charge</p>
-        <p class="photo-band-quote">Votre chauffeur vous attend, <span class="hl">la porte ouverte.</span></p>
-        <a class="btn btn-primary" href="#reserver">Réserver un trajet <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
     <!-- ============ FLOTTE ============ -->
-    <section class="section" id="flotte" aria-labelledby="fleet-title">
+    <section class="section dark" id="flotte" aria-labelledby="fleet-title">
       <div class="wrap">
-        <div class="section-head center">
-          <p class="eyebrow">Notre flotte</p>
-          <h2 id="fleet-title">Deux Mercedes, <span class="hl">pour 1 à 8 passagers</span></h2>
+        <div class="section-head">
+          <p class="eyebrow">La flotte</p>
+          <h2 id="fleet-title">Mercedes-Benz, <em>rien de moins.</em></h2>
         </div>
-        <div class="fleet-grid">
-          <article class="card vehicle">
-            <img class="vehicle-photo" src="assets/img/classe-v-nuit.jpg" alt="Mercedes-Benz Classe V noire stationnée de nuit" width="1600" height="893" loading="lazy">
-            <div class="vehicle-body">
+        <div class="fleet">
+          <article class="car car-main">
+            <img src="assets/img/classe-v-nuit.jpg" alt="Mercedes-Benz Classe V noire stationnée de nuit" width="1600" height="893">
+            <div class="car-body">
               <h3>Mercedes-Benz Classe V</h3>
-              <p>Véhicule premium pour les transferts professionnels, les déplacements privés et les petits groupes, avec une présentation haut de gamme.</p>
+              <p>L'espace d'un salon et la présentation d'une berline haut de gamme, pour vos transferts et déplacements d'affaires.</p>
               <dl class="specs">
                 <div><dt>Passagers</dt><dd>7</dd></div>
                 <div><dt>Modèle</dt><dd>2022</dd></div>
-                <div><dt>Usage</dt><dd>Affaires, transferts</dd></div>
+                <div><dt>Idéal pour</dt><dd>Affaires, transferts</dd></div>
               </dl>
             </div>
           </article>
-          <article class="card vehicle">
-            <div class="photo-slot" role="img" aria-label="Emplacement photo : Mercedes-Benz Sprinter">
-              <span class="slot-label">Photo à intégrer</span>
-              <span class="slot-desc">Vraie photo du Sprinter de l'entreprise</span>
-            </div>
-            <div class="vehicle-body">
+          <article class="car">
+            <div class="photo-slot" role="img" aria-label="Emplacement photo : Mercedes-Benz Sprinter"><span>Photo du Sprinter à intégrer</span></div>
+            <div class="car-body">
               <h3>Mercedes-Benz Sprinter</h3>
-              <p>Le véhicule des navettes d'entreprise et des déplacements collectifs, pour transporter un groupe ensemble.</p>
+              <p>Pour voyager ensemble : navettes d'entreprise et déplacements de groupe.</p>
               <dl class="specs">
                 <div><dt>Passagers</dt><dd>8</dd></div>
                 <div><dt>Modèle</dt><dd><span class="ph" title="À compléter">[année]</span></dd></div>
-                <div><dt>Usage</dt><dd>Navettes, groupes</dd></div>
+                <div><dt>Idéal pour</dt><dd>Navettes, groupes</dd></div>
               </dl>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ COMMENT ÇA MARCHE ============ -->
-    <section class="section" id="fonctionnement" aria-labelledby="how-title">
-      <div class="wrap">
-        <div class="section-head center">
-          <p class="eyebrow">Réservation</p>
-          <h2 id="how-title">Réservez votre chauffeur <span class="hl">en trois étapes</span></h2>
-        </div>
-        <ol class="steps">
-          <li class="card step">
-            <span class="step-n">01</span>
-            <h3>Vous décrivez votre trajet</h3>
-            <p>Adresse de départ, destination, date, horaire, passagers et bagages : une minute suffit.</p>
-          </li>
-          <li class="card step">
-            <span class="step-n">02</span>
-            <h3>Nous vous envoyons un devis</h3>
-            <p>Une proposition claire et personnalisée, que vous validez en un message.</p>
-          </li>
-          <li class="card step">
-            <span class="step-n">03</span>
-            <h3>Votre chauffeur vous attend</h3>
-            <p>À l'adresse et à l'heure convenues, où que vous soyez. Vous n'avez plus qu'à monter.</p>
-          </li>
-        </ol>
-        <div class="center-cta"><a class="btn btn-primary" href="#reserver">Commencer ma demande <span aria-hidden="true">→</span></a></div>
-      </div>
-    </section>
-
-    <!-- ============ FORMULES ============ -->
-    <section class="section" aria-labelledby="offers-title">
-      <div class="wrap">
-        <div class="section-head center">
-          <p class="eyebrow">Particuliers et entreprises</p>
-          <h2 id="offers-title">Chaque prestation, <span class="hl">un devis sur mesure</span></h2>
-        </div>
-        <div class="offers">
-          <article class="card offer">
-            <p class="offer-kicker">Prestations privées</p>
-            <h3>Pour vous et vos proches</h3>
-            <ul class="checks">
-              <li>Transferts aéroport et gare</li>
-              <li>Sorties, soirées, événements familiaux</li>
-              <li>Familles, petits groupes, longues distances</li>
-            </ul>
-            <a class="btn btn-ghost btn-block" href="#reserver">Demander un devis</a>
-          </article>
-          <article class="card offer offer-featured">
-            <p class="offer-kicker">Prestations professionnelles</p>
-            <h3>Pour vos équipes et vos invités</h3>
-            <ul class="checks">
-              <li>Navettes ponctuelles ou régulières</li>
-              <li>Accueil de clients et partenaires</li>
-              <li>Navettes contractualisées et liaisons longue distance</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="#reserver">Demander un devis entreprise</a>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ ZONE ============ -->
-    <section class="section" id="zone" aria-labelledby="zone-title">
+    <section class="section light" id="zone" aria-labelledby="zone-title">
       <div class="wrap zone-grid">
         <div class="zone-copy">
           <p class="eyebrow">Zone d'intervention</p>
-          <h2 id="zone-title">Partout en Gironde, <span class="hl">partout en Nouvelle-Aquitaine</span></h2>
-          <p>Votre chauffeur vient vous chercher à l'adresse de votre choix, du Bassin d'Arcachon au Pays basque, de Saint-Émilion à La Rochelle, et vous conduit où vous le souhaitez.</p>
+          <h2 id="zone-title">Où que vous soyez <em>en Nouvelle-Aquitaine.</em></h2>
+          <p class="intro">Du Bassin d'Arcachon au Pays basque, de Saint-Émilion à La Rochelle : votre chauffeur vient vous chercher à l'adresse de votre choix et vous conduit où vous le souhaitez.</p>
           <ul class="chips">
-            <li>Bordeaux et métropole</li><li>Aéroport de Mérignac</li><li>Bassin d'Arcachon</li><li>Médoc</li><li>Saint-Émilion · Libourne</li><li>Pays basque</li><li>Landes</li><li>Charente-Maritime</li><li>Dordogne</li><li>Toute la Nouvelle-Aquitaine</li>
+            <li>Bordeaux et métropole</li><li>Aéroport de Mérignac</li><li>Bassin d'Arcachon</li><li>Médoc</li><li>Saint-Émilion</li><li>Pays basque</li><li>Landes</li><li>Charente-Maritime</li><li>Dordogne</li>
           </ul>
         </div>
-        <figure class="card zone-map">
+        <figure class="zone-map">
           <svg viewBox="0 0 360 420" role="img" aria-labelledby="map-title">
             <title id="map-title">Schéma : trajets possibles depuis Bordeaux vers les principales villes de Nouvelle-Aquitaine</title>
             <defs>
@@ -432,134 +297,72 @@
             <g class="map-pt-home"><circle cx="123" cy="225" r="6"/><circle class="pulse" cx="123" cy="225" r="6"/></g>
             <text class="map-label" x="64" y="256" text-anchor="end">Arcachon</text><text class="map-label" x="62" y="206" text-anchor="end">Lacanau</text><text class="map-label" x="168" y="217" text-anchor="start">Saint-Émilion</text><text class="map-label" x="82" y="103" text-anchor="start">La Rochelle</text><text class="map-label" x="211" y="63" text-anchor="start">Poitiers</text><text class="map-label" x="291" y="135" text-anchor="start">Limoges</text><text class="map-label" x="245" y="197" text-anchor="start">Périgueux</text><text class="map-label" x="236" y="290" text-anchor="start">Agen</text><text class="map-label" x="138" y="320" text-anchor="start">Mont-de-Marsan</text><text class="map-label" x="150" y="376" text-anchor="start">Pau</text><text class="map-label" x="46" y="359" text-anchor="start">Biarritz</text><text class="map-label" x="196" y="152" text-anchor="start">Angoulême</text><text class="map-label" x="142" y="88" text-anchor="start">Niort</text><text class="map-label" x="315" y="199" text-anchor="start">Brive</text>
           </svg>
-          <figcaption>Schéma indicatif · exemples de destinations en Nouvelle-Aquitaine</figcaption>
+          <figcaption>Schéma indicatif · exemples de destinations</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- ============ VOTRE INTERLOCUTEUR ============ -->
-    <section class="section section-tight" aria-labelledby="team-title">
-      <div class="wrap">
-        <div class="card person">
-          <div class="photo-slot person-photo" role="img" aria-label="Emplacement photo : Sébastien Luccioni, gérant">
-            <span class="slot-label">Photo à intégrer</span>
-            <span class="slot-desc">Portrait de Sébastien Luccioni</span>
-          </div>
-          <div class="person-copy">
-            <p class="eyebrow">Votre interlocuteur</p>
-            <h2 id="team-title">Une entreprise à taille humaine, <span class="hl">dirigée par son fondateur</span></h2>
-            <p>Conduite Privée est dirigée par Sébastien Luccioni depuis sa création en 2013. Vous échangez avec un interlocuteur identifié, de la demande de devis jusqu'au jour du trajet.</p>
-            <p class="signature">« Vous conduire, c'est notre métier »</p>
-            <div class="cta-row">
-              <a class="btn btn-primary btn-sm" href="#reserver">Demander un devis</a>
-              <a class="btn btn-ghost btn-sm" href="tel:+33777496234">Appeler le 07 77 49 62 34</a>
-            </div>
-          </div>
+    <section class="section dark section-tight" aria-labelledby="team-title">
+      <div class="wrap person">
+        <div class="photo-slot person-photo" role="img" aria-label="Emplacement photo : Sébastien Luccioni, gérant"><span>Portrait de Sébastien Luccioni à intégrer</span></div>
+        <div class="person-copy">
+          <p class="eyebrow">Votre interlocuteur</p>
+          <h2 id="team-title">Une maison à taille humaine, <em>dirigée par son fondateur.</em></h2>
+          <p class="intro">Conduite Privée est dirigée par Sébastien Luccioni depuis sa création. Vous échangez avec un interlocuteur identifié, de la demande de devis jusqu'au jour du trajet.</p>
+          <p class="signature">« Vous conduire, c'est notre métier »</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ DEMANDE ============ -->
-    <section class="section" id="reserver" aria-labelledby="quick-title">
-      <div class="wrap">
-        <div class="section-head center">
-          <p class="eyebrow">Réservation et devis</p>
-          <h2 id="quick-title">Votre demande <span class="hl">en une minute</span></h2>
-        </div>
-        <form class="card quick" data-quick novalidate aria-labelledby="quick-title">
-          <div class="quick-grid">
-            <div class="field field-wide">
-              <label for="q-from">Départ</label>
-              <input id="q-from" name="depart" type="text" autocomplete="street-address" placeholder="Adresse, gare, aéroport…" required>
-            </div>
-            <div class="field field-wide">
-              <label for="q-to">Destination</label>
-              <input id="q-to" name="destination" type="text" placeholder="Ex. Aéroport Bordeaux-Mérignac" required>
-            </div>
-            <div class="field">
-              <label for="q-date">Date</label>
-              <input id="q-date" name="date" type="date" required>
-            </div>
-            <div class="field">
-              <label for="q-time">Heure</label>
-              <input id="q-time" name="heure" type="time" required>
-            </div>
-            <div class="field">
-              <label for="q-pax">Passagers</label>
-              <select id="q-pax" name="passagers">
-                <option>1</option><option>2</option><option>3</option><option>4</option>
-                <option>5</option><option>6</option><option>7</option><option>8</option>
-                <option value="9+">9 et plus</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="q-bags">Bagages</label>
-              <select id="q-bags" name="bagages">
-                <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option>
-                <option>5</option><option>6</option><option value="7+">7 et plus</option>
-              </select>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-block" type="submit">Continuer ma demande <span aria-hidden="true">→</span></button>
-          <p class="quick-msg" role="status" aria-live="polite" data-quick-msg></p>
-          <ul class="quick-trust">
-            <li>Sans engagement</li>
-            <li>Devis personnalisé</li>
-            <li><span class="stars" aria-hidden="true">★★★★★</span> 5,0 sur Google</li>
-          </ul>
-          <p class="quick-note">Vos coordonnées et demandes particulières vous seront demandées à l'étape suivante. Vos données servent uniquement à traiter votre demande (<a href="confidentialite.html">politique de confidentialité</a>).</p>
-        </form>
       </div>
     </section>
 
     <!-- ============ FAQ ============ -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="wrap faq-wrap">
-        <div class="section-head center">
-          <p class="eyebrow">FAQ</p>
-          <h2 id="faq-title">Questions fréquentes</h2>
+    <section class="section light" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="section-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Avant <em>de réserver.</em></h2>
+          <p class="intro">Une autre question ? Appelez-nous au <a class="tel" href="tel:+33777496234">07 77 49 62 34</a>.</p>
         </div>
         <div class="faq-list">
-          <details class="card">
+          <details>
             <summary>Conduite Privée est-elle un VTC&nbsp;?</summary>
             <p>Oui. Conduite Privée est une entreprise de VTC premium : un chauffeur privé, réservé à l'avance, pour des prestations privées et professionnelles. N° d'inscription au registre VTC&nbsp;: <span class="ph" title="À compléter">[à compléter]</span>.</p>
           </details>
-          <details class="card">
+          <details>
             <summary>Comment obtenir un devis&nbsp;?</summary>
-            <p>Remplissez la demande ci-dessus : départ, destination, date, horaire, passagers et bagages. Vous pouvez aussi nous appeler au <a class="tel" href="tel:+33777496234">07 77 49 62 34</a>.</p>
+            <p>Remplissez la barre de réservation en haut de page (départ, destination, date, heure, passagers) ou appelez le <a class="tel" href="tel:+33777496234">07 77 49 62 34</a>.</p>
           </details>
-          <details class="card">
-            <summary>Quelles zones desservez-vous&nbsp;?</summary>
-            <p>Partout en Gironde et en Nouvelle-Aquitaine. Le départ peut se faire de l'adresse de votre choix : domicile, hôtel, bureau, aéroport ou gare. Les trajets au-delà de la région sont étudiés sur demande.</p>
+          <details>
+            <summary>D'où peut partir mon trajet&nbsp;?</summary>
+            <p>De l'adresse de votre choix, partout en Gironde et en Nouvelle-Aquitaine : domicile, hôtel, bureau, aéroport ou gare. Les trajets au-delà de la région sont étudiés sur demande.</p>
           </details>
-          <details class="card">
+          <details>
             <summary>Proposez-vous des prestations pour les entreprises&nbsp;?</summary>
-            <p>Oui : transport de dirigeants et de collaborateurs, mise à disposition avec chauffeur, navettes régulières, ponctuelles ou contractualisées, et liaisons longue distance sur devis.</p>
+            <p>Oui : déplacements de dirigeants et de collaborateurs, mise à disposition avec chauffeur, navettes régulières, ponctuelles ou contractualisées, et liaisons longue distance sur devis.</p>
           </details>
-          <details class="card">
+          <details>
             <summary>Combien de temps à l'avance faut-il réserver&nbsp;?</summary>
             <p><span class="ph" title="À compléter">[Délai de réservation conseillé à préciser]</span></p>
           </details>
-          <details class="card">
+          <details>
             <summary>Quels véhicules utilisez-vous&nbsp;?</summary>
-            <p>Une Mercedes-Benz Classe V de 2022 (7 passagers) pour les transferts et déplacements d'affaires, et un Mercedes-Benz Sprinter (8 passagers) pour les groupes et navettes.</p>
+            <p>Une Mercedes-Benz Classe V de 2022 (7 passagers) et un Mercedes-Benz Sprinter (8 passagers).</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ============ CTA FINAL ============ -->
+    <!-- ============ APPEL FINAL ============ -->
     <section class="final" aria-labelledby="cta-title">
-      <div class="wrap">
-        <div class="final-box">
-          <h2 id="cta-title">Où que vous soyez, <span class="hl">votre chauffeur vous attend.</span></h2>
-          <p class="final-rating"><span class="stars" aria-hidden="true">★★★★★</span> <span>5,0 sur 5 · 6 avis Google</span></p>
-          <p>Devis personnalisé pour chaque demande. Téléphone&nbsp;: <a class="tel" href="tel:+33777496234">07 77 49 62 34</a></p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#reserver">Réserver un trajet <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" href="#reserver">Demander un devis</a>
-          </div>
+      <img src="assets/img/chauffeur-hotel-2.jpg" alt="" width="1600" height="893">
+      <div class="wrap final-inner">
+        <p class="kicker">« Vous conduire, c'est notre métier »</p>
+        <h2 id="cta-title">Votre chauffeur <em>vous attend.</em></h2>
+        <div class="cta-row">
+          <a class="btn btn-accent" href="#reserver">Obtenir mon devis</a>
+          <a class="btn btn-outline" href="tel:+33777496234">07 77 49 62 34</a>
         </div>
+        <p class="final-note"><span class="stars" aria-hidden="true">★★★★★</span> 5,0 sur Google · Sans engagement</p>
       </div>
     </section>
   </main>
@@ -568,34 +371,30 @@
   <footer class="site-footer" id="contact">
     <div class="wrap footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="#top" aria-label="Conduite Privée, retour en haut">
-        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195">
-        </a>
-        <p class="signature">« Vous conduire, c'est notre métier »</p>
-        <p>Transport de personnes avec chauffeur en Gironde et en Nouvelle-Aquitaine depuis 2014.</p>
-        <a class="footer-social" href="https://fr.linkedin.com/company/conduite-priv%C3%A9e" rel="noopener">LinkedIn</a>
+        <img class="brand-logo" src="assets/img/logo-conduite-privee-fond-sombre.png" alt="Conduite Privée" width="600" height="195" loading="lazy">
+        <p>VTC premium et transport de personnes avec chauffeur en Gironde et en Nouvelle-Aquitaine.</p>
+        <a class="link" href="https://fr.linkedin.com/company/conduite-priv%C3%A9e" rel="noopener">LinkedIn</a>
       </div>
       <div>
-        <h2 class="footer-title">Services</h2>
+        <h2 class="footer-title">Prestations</h2>
         <ul>
-          <li><a href="#services">Transferts aéroport</a></li>
-          <li><a href="#services">Transferts gare</a></li>
+          <li><a href="#services">Déplacements d'affaires</a></li>
           <li><a href="#services">Navettes d'entreprise</a></li>
-          <li><a href="#services">Déplacements professionnels</a></li>
-          <li><a href="#services">Prestations privées</a></li>
+          <li><a href="#services">Transferts aéroport et gare</a></li>
+          <li><a href="#services">Trajets privés et groupes</a></li>
         </ul>
       </div>
       <div>
         <h2 class="footer-title">Contact</h2>
         <address>
-          Siège : 14 impasse du Potier<br>33310 Lormont<br>
-          Tél. <a class="tel" href="tel:+33777496234">07 77 49 62 34</a><br>
-          <span class="ph" title="À compléter">[e-mail à compléter]</span>
+          <a class="tel" href="tel:+33777496234">07 77 49 62 34</a><br>
+          <span class="ph" title="À compléter">[e-mail à compléter]</span><br>
+          Siège : 14 impasse du Potier, 33310 Lormont
         </address>
         <p class="hours">Horaires&nbsp;: <span class="ph" title="À compléter">[à compléter]</span></p>
       </div>
       <div>
-        <h2 class="footer-title">Informations légales</h2>
+        <h2 class="footer-title">Informations</h2>
         <ul>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
           <li><a href="confidentialite.html">Politique de confidentialité</a></li>
@@ -604,14 +403,14 @@
       </div>
     </div>
     <div class="wrap legal">
-      <p>© <span data-year>2026</span> CONDUITE PRIVÉE · SARL · SIREN 798 962 932 · SIRET 798 962 932 00025 · RCS Bordeaux · Capital 5 000 € · TVA FR87798962932 · APE 4939B · Registre VTC <span class="ph" title="À compléter">[n° à compléter]</span></p>
+      <p>© <span data-year>2026</span> CONDUITE PRIVÉE · SARL au capital de 5 000 € · RCS Bordeaux · SIREN 798 962 932 · SIRET 798 962 932 00025 · TVA FR87798962932 · APE 4939B · Registre VTC <span class="ph" title="À compléter">[n° à compléter]</span></p>
     </div>
   </footer>
 
   <!-- Barre d'action mobile -->
   <div class="mobile-bar" aria-label="Actions rapides">
-    <a class="btn btn-ghost btn-sm" href="tel:+33777496234">Appeler</a>
-    <a class="btn btn-primary btn-sm" href="#reserver">Réserver</a>
+    <a class="btn btn-outline btn-sm" href="tel:+33777496234">Appeler</a>
+    <a class="btn btn-accent btn-sm" href="#reserver">Obtenir mon devis</a>
   </div>
 
   <script src="assets/js/main.js" defer></script>
